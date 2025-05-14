@@ -12,7 +12,7 @@
   "identifier" : "63361598",
   "nonRenewingSubscriptions" : [
     {
-      "displayPrice" : "0.99",
+      "displayPrice" : "9.99",
       "familyShareable" : false,
       "internalID" : "8336A558",
       "localizations" : [
@@ -65,7 +65,10 @@
     "_storefront" : "USA",
     "_storeKitErrors" : [
       {
-        "current" : null,
+        "current" : {
+          "index" : 2,
+          "type" : "generic"
+        },
         "enabled" : false,
         "name" : "Load Products"
       },
@@ -80,7 +83,10 @@
         "name" : "Verification"
       },
       {
-        "current" : null,
+        "current" : {
+          "index" : 2,
+          "type" : "generic"
+        },
         "enabled" : false,
         "name" : "App Store Sync"
       },
@@ -90,7 +96,10 @@
         "name" : "Subscription Status"
       },
       {
-        "current" : null,
+        "current" : {
+          "index" : 3,
+          "type" : "generic"
+        },
         "enabled" : false,
         "name" : "App Transaction"
       },
@@ -100,7 +109,10 @@
         "name" : "Manage Subscriptions Sheet"
       },
       {
-        "current" : null,
+        "current" : {
+          "index" : 0,
+          "type" : "refund request"
+        },
         "enabled" : false,
         "name" : "Refund Request Sheet"
       },
