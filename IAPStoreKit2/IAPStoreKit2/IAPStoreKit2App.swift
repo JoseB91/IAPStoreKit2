@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct IAPStoreKit2App: App {
+    @StateObject private var storeManager = StoreManager()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(storeManager: storeManager)
         }
     }
 }
