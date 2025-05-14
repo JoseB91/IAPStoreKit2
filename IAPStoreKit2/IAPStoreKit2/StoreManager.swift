@@ -110,8 +110,28 @@ class StoreManager: ObservableObject {
     func isPurchased(_ productID: String) -> Bool {
         return purchasedProductIDs.contains(productID)
     }
+        
+    func validateReceipt(for productID: String) async throws -> Bool {
+        // Local validation (basic)
+        for await result in Transaction.currentEntitlements {
+            do {
+                let transaction = try await checkVerified(result)
+                if transaction.productID == productID && transaction.revocationDate == nil {
+                    // Product is still valid
+                    return true
+                }
+            } catch {
+                throw error
+            }
+        }
+    
+        // For more security, implement server-side validation
+        // by sending the App Store receipt to your server
+        return false
+    }
 }
 
 enum StoreError: Error {
     case failedVerification
 }
+

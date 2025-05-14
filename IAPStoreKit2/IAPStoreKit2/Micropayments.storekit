@@ -1,0 +1,184 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "63361598",
+  "nonRenewingSubscriptions" : [
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "8336A558",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.joseb91.iapstorekit2.nrs1",
+      "referenceName" : "nonRenewingSubscription",
+      "type" : "NonRenewingSubscription"
+    }
+  ],
+  "products" : [
+    {
+      "displayPrice" : "3.50",
+      "familyShareable" : false,
+      "internalID" : "B44B46C0",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.joseb91.iapstorekit2.cp1",
+      "referenceName" : "consumableProduct",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "CE02B9A5",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.joseb91.iapstorekit2.ncp1",
+      "referenceName" : "nonConsumableProduct",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Load Products"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Purchase"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Verification"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Store Sync"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Subscription Status"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Transaction"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Manage Subscriptions Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Refund Request Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Offer Code Redeem Sheet"
+      }
+    ]
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "C239C6EB",
+      "localizations" : [
+
+      ],
+      "name" : "SubscriptionGroup",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+            {
+              "internalID" : "DAA3F4E7",
+              "offerID" : "com.joseb91.iapstorekit2.po1",
+              "paymentMode" : "free",
+              "referenceName" : "PromotionalOffer",
+              "subscriptionPeriod" : "P1M"
+            }
+          ],
+          "codeOffers" : [
+            {
+              "eligibility" : [
+                "new"
+              ],
+              "internalID" : "22950371",
+              "isStackable" : true,
+              "paymentMode" : "free",
+              "referenceName" : "OfferCode",
+              "subscriptionPeriod" : "P1W"
+            }
+          ],
+          "displayPrice" : "0.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "963D4CA2",
+          "introductoryOffer" : {
+            "displayPrice" : "4.99",
+            "internalID" : "FF50ECE7",
+            "paymentMode" : "payUpFront",
+            "subscriptionPeriod" : "P2M"
+          },
+          "localizations" : [
+            {
+              "description" : "",
+              "displayName" : "",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.joseb91.iapstorekit2.ars1",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "autoRenewableSubscription",
+          "subscriptionGroupID" : "C239C6EB",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+            {
+              "internalID" : "751D90B5",
+              "isEligible" : true,
+              "offerID" : "com.joseb91.iapstorekit2.wbo1",
+              "paymentMode" : "free",
+              "referenceName" : "WinBackOffer",
+              "subscriptionPeriod" : "P1M"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}
